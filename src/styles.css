@@ -1,0 +1,88 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.traffic-light-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.traffic-light {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.light {
+  width: 80px;
+  height: 80px;
+  margin: 10px 0;
+  border-radius: 50%;
+  background-color: gray;
+  transition: background-color 0.5s ease;
+}
+
+.green.active {
+  background-color: green;
+}
+
+.yellow.active {
+  background-color: yellow;
+}
+
+.red.active {
+  background-color: red;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+button {
+  width: 150px;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.pedestrian-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.emergency-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.timer {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
